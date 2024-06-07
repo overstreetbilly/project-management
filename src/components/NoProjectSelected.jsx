@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const NoProjectSelected = () => {
+const NoProjectSelected = ({ onStartAddProject }) => {
     return (
         <div className='mt-24 text-center w-2/3'>
             <h2 className='text-xl font-bold text-stone-500 my-4'>
@@ -10,7 +10,7 @@ const NoProjectSelected = () => {
                 Select a project or get started with a new one.
             </p>
             <p>
-                <Button>Create new project</Button>
+                <Button onClick={onStartAddProject}>Create new project</Button>
             </p>
         </div>
     );
